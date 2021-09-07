@@ -18,10 +18,11 @@ imgGray.shape
 #Getting the pixels into an array
 import numpy as np
 data=np.array(imgGray)
+
 #Reducing the number of dimensions of array
 flattened=data.flatten()
 
-#edge detection
+#edge detection and image pre-processing
 mat_y = np.array([[ -1, -2, -1], 
                    [ 0, 0, 0], 
                    [ 1, 2, 1]])
